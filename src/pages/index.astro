@@ -1,0 +1,35 @@
+---
+import Hero from '../components/Hero.astro';
+import Layout from '../layouts/Layout.astro';
+import ProjectGrid from "../components/ProjectGrid.astro";
+
+const projects = [
+  {
+    title: "Cozinha Moderna",
+    category: "Cozinha",
+    image: "/images/projects/cozinha-01.jpg",
+    href: "/projetos/cozinha-moderna"
+  },
+  {
+    title: "Apartamento Pedra Branca",
+    category: "Residencial",
+    image: "/images/projects/apto-01.jpg",
+    href: "/projetos/apartamento-pedra-branca"
+  },
+  {
+    title: "Quarto Contemporâneo",
+    category: "Quarto",
+    image: "/images/projects/quarto-01.jpg",
+    href: "/projetos/quarto-contemporaneo"
+  }
+];
+---
+
+<Layout>
+<Hero
+  title="Nova Arte Design"
+  subtitle="Ambientes planejados para refletir sua personalidade, maximizar conforto e valorizar cada detalhe do seu lar."
+  image="/images/hero/living-room.jpg"
+/>
+<ProjectGrid projects={projects} />
+</Layout>

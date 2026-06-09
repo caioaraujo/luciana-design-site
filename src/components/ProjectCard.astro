@@ -1,0 +1,55 @@
+---
+interface Props {
+  title: string;
+  category: string;
+  image: string;
+  href: string;
+}
+
+const { title, category, image, href } = Astro.props;
+---
+
+<a
+  href={href}
+  class="group block overflow-hidden rounded-xl bg-white shadow-sm hover:shadow-xl transition-all duration-300"
+>
+  <div class="overflow-hidden">
+    <img
+      src={image}
+      alt={title}
+      class="h-80 w-full object-cover transition duration-700 group-hover:scale-105"
+      loading="lazy"
+    />
+  </div>
+
+  <div class="p-6">
+    <span class="text-xs uppercase tracking-[0.2em] text-stone-500">
+      {category}
+    </span>
+
+    <h3 class="mt-2 text-xl font-light text-stone-900">
+      {title}
+    </h3>
+
+    <div
+      class="mt-4 flex items-center gap-2 text-stone-700 group-hover:gap-3 transition-all"
+    >
+      <span>Ver Projeto</span>
+
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="w-4 h-4"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M9 5l7 7-7 7"
+        />
+      </svg>
+    </div>
+  </div>
+</a>
