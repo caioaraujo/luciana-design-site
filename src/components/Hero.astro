@@ -10,6 +10,10 @@ const {
   subtitle = "Projetos de interiores que unem funcionalidade, conforto e beleza para transformar ambientes em experiências únicas.",
   image = "/images/hero/living-room.jpg"
 } = Astro.props;
+
+const whatsappMessage = encodeURIComponent(
+  "Olá, Luciana! Visitei o site da Nova Arte Design e gostaria de conversar sobre um projeto de interiores."
+);
 ---
 
 <section class="relative min-h-[90vh] flex items-center">
@@ -48,14 +52,14 @@ const {
 
       <div class="mt-10 flex flex-col sm:flex-row gap-4">
         <a
-          href="/portfolio"
+          href="#projetos"
           class="inline-flex justify-center items-center px-8 py-4 bg-white text-stone-900 rounded-md font-medium hover:bg-stone-100 transition"
         >
           Ver Projetos
         </a>
 
         <a
-          href="https://wa.me/5548984043490"
+          href={`https://wa.me/5548984043490?text=${whatsappMessage}`}
           target="_blank"
           rel="noopener noreferrer"
           class="inline-flex justify-center items-center px-8 py-4 border border-white rounded-md text-white hover:bg-white/10 transition"

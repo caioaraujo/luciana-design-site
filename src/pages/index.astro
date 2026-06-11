@@ -2,25 +2,44 @@
 import Hero from '../components/Hero.astro';
 import Layout from '../layouts/Layout.astro';
 import ProjectGrid from "../components/ProjectGrid.astro";
+import About from "../components/About.astro";
 
 const projects = [
   {
-    title: "Cozinha Moderna",
-    category: "Cozinha",
-    image: "/images/projects/cozinha-01.jpg",
-    href: "/projetos/cozinha-moderna"
+    title: "Sala de Estar",
+    category: "Sala",
+    image: "/images/projects/sala-estar-01.jpg",
+    href: "/projetos/sala-estar"
   },
   {
-    title: "Apartamento Pedra Branca",
-    category: "Residencial",
-    image: "/images/projects/apto-01.jpg",
-    href: "/projetos/apartamento-pedra-branca"
+    title: "Cozinha",
+    category: "Cozinha",
+    image: "/images/projects/cozinha-01.jpg",
+    href: "/projetos/cozinha"
+  },
+  {
+    title: "Sala de Jantar",
+    category: "Sala",
+    image: "/images/projects/sala-jantar-01.jpg",
+    href: "/projetos/sala-jantar"
+  },
+  {
+    title: "Banheiro",
+    category: "Banheiro",
+    image: "/images/projects/banheiro-01.jpg",
+    href: "/projetos/banheiro"
   },
   {
     title: "Quarto Contemporâneo",
     category: "Quarto",
-    image: "/images/projects/quarto-01.jpg",
+    image: "/images/projects/dormitorio-01.jpg",
     href: "/projetos/quarto-contemporaneo"
+  },
+  {
+    title: "Quarto de Bebê",
+    category: "Quarto",
+    image: "/images/projects/quarto-bebe-01.jpg",
+    href: "/projetos/quarto-bebe"
   }
 ];
 ---
@@ -29,7 +48,8 @@ const projects = [
 <Hero
   title="Nova Arte Design"
   subtitle="Ambientes planejados para refletir sua personalidade, maximizar conforto e valorizar cada detalhe do seu lar."
-  image="/images/hero/living-room.jpg"
+  image="/images/projects/sala-jantar-01.jpg"
 />
 <ProjectGrid projects={projects} />
+<About />
 </Layout>

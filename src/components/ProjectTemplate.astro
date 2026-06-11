@@ -1,0 +1,131 @@
+---
+interface Props {
+    title: string;
+    category: string;
+    location: string;
+    year: number;
+    heroImage: string;
+    challenge: string;
+    solution: string;
+    gallery: string[];
+}
+
+const {
+    title,
+    category,
+    location,
+    year,
+    heroImage,
+    challenge,
+    solution,
+    gallery,
+} = Astro.props;
+---
+
+<div class="relative">
+    <!-- Voltar -->
+    <div class="absolute top-6 left-6 z-20">
+        <a
+            href="/"
+            class="inline-flex items-center gap-2 px-4 py-2 bg-white/90 backdrop-blur-sm rounded-lg text-stone-800 hover:bg-white transition shadow-sm"
+        >
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-4 h-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                stroke-width="2"
+            >
+                <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15 19l-7-7 7-7"></path>
+            </svg>
+
+            <span>Voltar</span>
+        </a>
+    </div>
+
+    <!-- Hero -->
+    <section class="relative h-[70vh]">
+        <img src={heroImage} alt={title} class="w-full h-full object-cover" />
+
+        <div class="absolute inset-0 bg-black/30"></div>
+
+        <div class="absolute inset-0 flex items-end">
+            <div class="max-w-7xl mx-auto px-6 pb-12 text-white">
+                <span class="uppercase tracking-[0.3em] text-sm">
+                    {category}
+                </span>
+
+                <h1 class="mt-3 text-5xl md:text-6xl font-light">
+                    {title}
+                </h1>
+
+                <p class="mt-4 text-stone-200">
+                    {location} • {year}
+                </p>
+            </div>
+        </div>
+    </section>
+</div>
+
+<!-- Conteúdo -->
+<section class="max-w-5xl mx-auto px-6 py-20">
+    <!-- Desafio -->
+    <div class="mb-16">
+        <h2 class="text-3xl font-light mb-6">O Desafio</h2>
+
+        <p class="text-stone-700 leading-relaxed text-lg">
+            {challenge}
+        </p>
+    </div>
+
+    <!-- Solução -->
+    <div class="mb-20">
+        <h2 class="text-3xl font-light mb-6">Solução Proposta</h2>
+
+        <p class="text-stone-700 leading-relaxed text-lg">
+            {solution}
+        </p>
+    </div>
+
+    <!-- Galeria -->
+    <div>
+        <h2 class="text-3xl font-light mb-8">Galeria do Projeto</h2>
+
+        <div class="grid gap-6 md:grid-cols-2">
+            {
+                gallery.map((image) => (
+                    <img
+                        src={image}
+                        alt={title}
+                        class="w-full h-80 object-cover rounded-xl"
+                        loading="lazy"
+                    />
+                ))
+            }
+        </div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-stone-900 text-white py-20">
+    <div class="max-w-4xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-light">Gostou deste projeto?</h2>
+
+        <p class="mt-4 text-stone-300">
+            Entre em contato para conversar sobre seu ambiente.
+        </p>
+
+        <a
+            href="https://wa.me/5548984043490?text=Olá,%20Luciana!%20Gostaria%20de%20conversar%20sobre%20um%20projeto."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex mt-8 px-8 py-4 bg-white text-stone-900 rounded-md font-medium hover:bg-stone-100 transition"
+        >
+            Falar pelo WhatsApp
+        </a>
+    </div>
+</section>
