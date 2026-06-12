@@ -10,7 +10,7 @@ const whatsappMessage = encodeURIComponent(
 );
 ---
 
-<section class="relative min-h-screen">
+<section id="inicio" class="relative min-h-screen">
   <!-- Background -->
   <div class="absolute inset-0">
     <img
@@ -20,49 +20,55 @@ const whatsappMessage = encodeURIComponent(
     />
 
     <!-- Overlay -->
-    <div class="absolute inset-0 bg-black/40"></div>
+    <div
+      class="absolute inset-0
+         bg-gradient-to-r
+         from-[#111]
+         via-black/50
+         to-transparent"
+    >
+    </div>
   </div>
 
   <!-- Content -->
-  <div class="relative z-10 min-h-screen flex items-center">
-    <div class="max-w-7xl mx-auto px-6 w-full text-white">
-      <!-- Logo -->
-      <img
-        src="/images/logo/logo.jpg"
-        alt="Nova Arte Design"
-        class="w-48 md:w-64 lg:w-80 mb-10"
-      />
+  <div class="relative z-10 min-h-screen flex items-center lg:pt-12">
+    <div class="max-w-7xl mx-auto w-full px-6">
+      <div class="max-w-[500px] text-white">
+        <!-- Headline -->
+        <div class="mb-6">
+          <span class="uppercase tracking-[0.35em] text-xs text-[#d4b190]">
+            Nova Art Design
+          </span>
 
-      <!-- Headline -->
-      <span class="uppercase tracking-[0.3em] text-sm text-stone-200">
-        Design de Interiores
-      </span>
-      <h1 class="text-5xl md:text-6xl lg:text-7xl font-light leading-tight">
-        Transformando ambientes em
-        <span class="italic"> experiências únicas </span>
-      </h1>
+          <p class="mt-2 text-sm tracking-[0.3em] text-stone-300">INTERIORES</p>
+        </div>
 
-      <p class="mt-8 text-lg text-stone-200 leading-relaxed">
-        Projetos de interiores personalizados que unem beleza, funcionalidade e
-        conforto.
-      </p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-light leading-tight">
+          Transformando ambientes em
+          <span class="block italic text-[#d4b190]"> experiências únicas </span>
+        </h1>
 
-      <div class="mt-10 flex flex-col sm:flex-row gap-4">
-        <a
-          href={`https://wa.me/5548984043490?text=${whatsappMessage}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="px-8 py-4 bg-[#d4b190] text-stone-900 rounded-md font-medium hover:opacity-90 transition"
-        >
-          Solicitar Orçamento
-        </a>
+        <p class="mt-4 text-sm text-stone-300">
+          Projetos residenciais e comerciais presencial em Florianópolis e região ou online.
+        </p>
 
-        <a
-          href="#projetos"
-          class="px-8 py-4 border border-white rounded-md hover:bg-white/10 transition"
-        >
-          Ver Projetos
-        </a>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+          <a
+            href={`https://wa.me/5548984043490?text=${whatsappMessage}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-8 py-4 bg-[#d4b190] text-stone-900 rounded-md font-medium hover:opacity-90 transition"
+          >
+            Solicitar Orçamento
+          </a>
+
+          <a
+            href="#projetos"
+            class="px-8 py-4 border border-white rounded-md hover:bg-white/10 transition"
+          >
+            Ver Projetos
+          </a>
+        </div>
       </div>
     </div>
   </div>

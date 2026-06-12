@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ProjectTemplate from "../../components/ProjectTemplate.astro";
+---
+
+<Layout>
+
+  <ProjectTemplate
+    title="Banheiro"
+    category="Banheiro"
+    location="São José"
+    year={2026}
+    heroImage="/images/projects/banheiro-01.jpg"
+    challenge="Os clientes buscavam um ambiente aconchegante com foco no conforto e usabilidade."
+    solution="Foi desenvolvida uma marcenaria sob medida, utilizando tons claros e iluminação indireta para ampliar visualmente o espaço."
+    gallery={[
+      "/images/projects/banheiro-01.jpg",
+      "/images/projects/banheiro-02.jpg",
+      "/images/projects/banheiro-03.jpg",
+      "/images/projects/banheiro-04.jpg"
+    ]}
+  />
+
+</Layout>

@@ -1,5 +1,22 @@
 @import "tailwindcss";
 
+:root {
+    --gold: #c9a063;
+}
+
 html {
   scroll-behavior: smooth;
+}
+
+em {
+    color: var(--gold);
+    font-style: italic
+}
+
+.eyebrow {
+    color: var(--gold);
+    text-transform: uppercase;
+    letter-spacing: .08em;
+    font-weight: 700;
+    font-size: 14px
 }

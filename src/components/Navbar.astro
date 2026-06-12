@@ -1,0 +1,69 @@
+---
+const whatsappMessage = encodeURIComponent(
+    "Olá, Luciana! Visitei o site da Nova Arte Design e gostaria de conversar sobre um projeto de interiores.",
+);
+---
+
+<header class="absolute top-0 left-0 right-0 z-50">
+    <nav
+        class="max-w-7xl mx-auto mt-4 px-8 py-4
+         backdrop-blur-md
+         bg-white/5
+         rounded-2xl"
+    >
+        <div class="flex items-center justify-between">
+            <!-- Marca -->
+            <a
+                href="#inicio"
+                class="flex items-center gap-3 text-white hover:text-[#d4b190] transition"
+            >
+                <span class="text-5xl font-serif leading-none"> NA </span>
+
+                <span class="leading-tight">
+                    <span class="block text-sm font-medium">
+                        Nova Art Design
+                    </span>
+
+                    <small
+                        class="block text-xs tracking-[0.3em] text-stone-300"
+                    >
+                        INTERIORES
+                    </small>
+                </span>
+            </a>
+
+            <!-- Menu -->
+            <div class="flex items-center gap-8">
+                <a
+                    href="#inicio"
+                    class="text-white text-sm uppercase tracking-wide hover:text-[#d4b190] transition"
+                >
+                    Início
+                </a>
+
+                <a
+                    href="#projetos"
+                    class="text-white text-sm uppercase tracking-wide hover:text-[#d4b190] transition"
+                >
+                    Projetos
+                </a>
+
+                <a
+                    href="#sobre"
+                    class="text-white text-sm uppercase tracking-wide hover:text-[#d4b190] transition"
+                >
+                    Sobre Mim
+                </a>
+
+                <a
+                    href={`https://wa.me/5548984043490?text=${whatsappMessage}`}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="px-6 py-3 rounded-lg bg-[#d4b190] text-stone-900 font-medium hover:opacity-90 transition"
+                >
+                    Orçamento
+                </a>
+            </div>
+        </div>
+    </nav>
+</header>
