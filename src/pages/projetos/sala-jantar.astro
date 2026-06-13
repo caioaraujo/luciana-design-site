@@ -1,0 +1,23 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ProjectTemplate from "../../components/ProjectTemplate.astro";
+---
+
+<Layout>
+
+  <ProjectTemplate
+    title="Sala de Jantar"
+    category="Sala"
+    location="São José"
+    year={2026}
+    heroImage="/images/projects/sala-jantar-01.jpg"
+    challenge={["O ambiente perfeito para reunir família e amigos merece um requinte diferenciado."]}
+    solution="Foi desenvolvida uma marcenaria sob medida, utilizando tons claros e iluminação indireta para ampliar visualmente o espaço."
+    gallery={[
+      "/images/projects/sala-jantar-01.jpg",
+      "/images/projects/sala-jantar-02.jpg",
+      "/images/projects/sala-jantar-03.jpg"
+    ]}
+  />
+
+</Layout>

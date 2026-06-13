@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ProjectTemplate from "../../components/ProjectTemplate.astro";
+---
+
+<Layout>
+    <ProjectTemplate
+        title="Home Office"
+        category="Escritorio"
+        location="São José"
+        year={2026}
+        heroImage="/images/projects/home-office-01.jpg"
+        challenge={[
+            "Ambiente desenvolvido para unir funcionalidade, conforto e sofisticação.",
+            "Com linhas contemporâneas, marcenaria planejada e uma paleta de cores harmoniosa, o projeto oferece um espaço organizado e inspirador, ideal para promover foco, produtividade e bem-estar durante as atividades do dia a dia.",
+        ]}
+        solution="Foi desenvolvida uma marcenaria sob medida, utilizando tons claros e iluminação indireta para ampliar visualmente o espaço."
+        gallery={[
+            "/images/projects/home-office-01.jpg",
+            "/images/projects/home-office-02.jpg",
+            "/images/projects/home-office-03.jpg",
+        ]}
+    />
+</Layout>

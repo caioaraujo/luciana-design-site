@@ -4,21 +4,25 @@ import ProjectTemplate from "../../components/ProjectTemplate.astro";
 ---
 
 <Layout>
-
   <ProjectTemplate
     title="Dormitório"
     category="Quarto"
     location="São José"
     year={2026}
     heroImage="/images/projects/dormitorio-01.jpg"
-    challenge="Requinte e conforto são o foco principal quando se fala em dormitório."
+    challenge={[
+      "Dormitório de Adolescente",
+      "Este dormitório foi desenvolvido para refletir a personalidade e o estilo de vida da adolescente, combinando sofisticação, conforto e funcionalidade. A composição de tons suaves, iluminação planejada e abundante luz natural cria um ambiente acolhedor e inspirador para os momentos de descanso, estudo e lazer. Cada detalhe foi cuidadosamente pensado para proporcionar praticidade no dia a dia, sem abrir mão da elegância e da identidade única do espaço.",
+      "",
+      "Dormitório de Casal",
+      "Projetado para ser um refúgio de conforto e tranquilidade, este dormitório de casal combina elegância, funcionalidade e bem-estar em cada detalhe. A paleta de tons neutros, aliada à iluminação aconchegante e à entrada abundante de luz natural, cria uma atmosfera sofisticada e acolhedora. Os elementos cuidadosamente selecionados valorizam a harmonia do ambiente, proporcionando um espaço ideal para descanso, relaxamento e conexão."
+    ]}
     solution="Foi desenvolvida uma marcenaria sob medida, utilizando tons claros e iluminação indireta para ampliar visualmente o espaço."
     gallery={[
       "/images/projects/dormitorio-01.jpg",
-      "/images/projects/closet-01.jpg",
-      "/images/projects/closet-02.jpg",
-      "/images/projects/dormitorio-03.jpg"
+      "/images/projects/dormitorio-02.jpg",
+      "/images/projects/dormitorio-03.jpg",
+      "/images/projects/dormitorio-04.jpg",
     ]}
   />
-
 </Layout>

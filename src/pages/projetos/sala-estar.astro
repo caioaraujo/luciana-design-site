@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ProjectTemplate from "../../components/ProjectTemplate.astro";
+---
+
+<Layout>
+    <ProjectTemplate
+        title="Sala de Estar"
+        category="Sala"
+        location="São José"
+        year={2024}
+        heroImage="/images/projects/sala-estar-01.jpg"
+        challenge={[
+            "A sala de estar é o coração da casa, um espaço pensado para receber, relaxar e criar momentos especiais. Cada projeto é desenvolvido de forma personalizada, combinando conforto, funcionalidade e sofisticação, com soluções que valorizam a personalidade dos moradores e transformam o ambiente em um espaço acolhedor e elegante.",
+            "✨ Conforto, harmonia e design em cada detalhe.",
+        ]}
+        solution="Foi desenvolvida uma marcenaria sob medida, utilizando tons claros e iluminação indireta para ampliar visualmente o espaço."
+        gallery={[
+            "/images/projects/sala-estar-01.jpg",
+            "/images/projects/sala-estar-02.jpg",
+            "/images/projects/sala-estar-03.jpg",
+        ]}
+    />
+</Layout>

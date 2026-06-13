@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ProjectTemplate from "../../components/ProjectTemplate.astro";
+---
+
+<Layout>
+
+  <ProjectTemplate
+    title="Lavanderia"
+    category="Lavanderia"
+    location="São José"
+    year={2026}
+    heroImage="/images/projects/lavanderia-02.jpg"
+    challenge={["Espaço otimizado para tarefas domésticas, sem perder o charme."]}
+    solution="Foi desenvolvida uma marcenaria sob medida, utilizando tons claros e iluminação indireta para ampliar visualmente o espaço."
+    gallery={[
+      "/images/projects/lavanderia-01.jpg",
+      "/images/projects/lavanderia-02.jpg",
+      "/images/projects/lavanderia-03.jpg",
+      "/images/projects/lavanderia-04.jpg"
+    ]}
+  />
+
+</Layout>

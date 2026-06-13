@@ -1,0 +1,24 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import ProjectTemplate from "../../components/ProjectTemplate.astro";
+---
+
+<Layout>
+
+  <ProjectTemplate
+    title="Área Externa"
+    category="Area Externa"
+    location="São José"
+    year={2025}
+    heroImage="/images/projects/area-externa-01.jpg"
+    challenge={["Relaxar curtir bons momentos em um ambiente divertido e agradável."]}
+    solution="Foi desenvolvida uma marcenaria sob medida, utilizando tons claros e iluminação indireta para ampliar visualmente o espaço."
+    gallery={[
+      "/images/projects/area-externa-01.jpg",
+      "/images/projects/area-externa-02.jpg",
+      "/images/projects/area-externa-03.jpg",
+      "/images/projects/area-externa-04.jpg"
+    ]}
+  />
+
+</Layout>
